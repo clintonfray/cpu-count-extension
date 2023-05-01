@@ -1,7 +1,7 @@
 <monitor>
     <name>LinuxDiskMonitor</name>
     <type>managed</type>
-    <enabled>true</enabled>
+    <enabled>false</enabled>
     <enable-override os-type="solaris">true</enable-override>
     <enable-override os-type="sunos">true</enable-override>
     <enable-override os-type="linux">true</enable-override>
