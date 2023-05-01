@@ -20,7 +20,7 @@ main() {
 		PARTITION_SPLITTER_REGEX = COLUMN_REGEX COLUMN_REGEX COLUMN_REGEX COLUMN_REGEX "%+" SPACE_REGEX;
 	}
 
-	{
+	(NR > 1) {
 		# Use PARTITION_SPLITTER_REGEX to handle spaces in the partition and the mount names
 		split($0, tokens, PARTITION_SPLITTER_REGEX);
 		
